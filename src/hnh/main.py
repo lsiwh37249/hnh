@@ -10,7 +10,5 @@ async def root():
 
 @app.post("/predict")
 async def root():
-    #fastapi 
-    return {"predict_result": "my_result"}
-
+    return {"predict_result": random.choice(["hotdog","not hotdog"])}
 
